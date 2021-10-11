@@ -1,0 +1,22 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "README generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarisolRamirez1031/README-generator.git"
+  },
+  "author": "Marisol Bennett",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarisolRamirez1031/README-generator/issues"
+  },
+  "homepage": "https://github.com/MarisolRamirez1031/README-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
