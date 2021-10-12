@@ -15,16 +15,22 @@ function generateMarkdown(data) {
   return `# ${data.title}
 
   ## Description
+  ${data.about}
 
   ## Table of Contents
+  ${data.contents}
 
   ## Installation
+  ${data.installation}
 
   ## Usage
+  ${data.usage}
 
   ## Credits 
+  ${data.credits}
 
   ## License
+  ${data.license}
 
 
 `;
