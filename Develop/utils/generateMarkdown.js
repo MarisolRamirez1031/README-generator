@@ -55,8 +55,6 @@ function generateMarkdown(data) {
   If you have any additonal questions you may contact me at ${data.email}
 
 
-
-
 `;
 }
 

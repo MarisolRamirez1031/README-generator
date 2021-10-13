@@ -126,6 +126,7 @@ function init() {
 // Function call to initialize app
 init(); 
 
+
 const printProfileData = (profileDataArr) => {
 
     profileDataArr.forEach((profileItem) => {
