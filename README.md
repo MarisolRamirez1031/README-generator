@@ -2,7 +2,7 @@
 
   
   ## Description 📖
-  This is a command-line application that dynamically generates a professional README file from the user's input using the Inquierer package, allowing you to focus on your project and being able to quickly generate an efficient README file. The application was built with node.js, ES6 and JavaScript.
+  to dynamically generate a README file 
 
   ## Table of Contents ![badge](https://img.shields.io/badge/License-MIT-blue)
 
@@ -16,10 +16,10 @@
 
 
   ## Installation 💾
-  Before beginning, please make sure to install [Node.js](https://nodejs.org/en/) follow the installation instructions on their website. After you've downloaded and installed Node.js to your machine you will navigate to the root directory of your project using the CLI and install [Inquierer](https://www.npmjs.com/package/inquirer). Once both steps have been complete you may initiate the README generator with the input of 'node Index' in the CLI or terminal.
+  Before you begin make sure you download and install Node.js, once that is complete you will use the inquierer package. Once both are installed you may use it in the CLI by initiating it using node index
 
   ## Usage 🧰 
-  This application is being used to help creators devote more time to working on projects and being able to quickly generate a professional README file for their project.
+  To help creator generate a README file quickly so they may devote more time on their projects
 
   ## Credits 🤝
   None at this time(:
