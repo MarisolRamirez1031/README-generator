@@ -72,7 +72,6 @@ const promptUser = () => {
                     return false;
                     }
                 }
-                
             },
             {
                 type: 'input',
@@ -91,7 +90,15 @@ const promptUser = () => {
             {
                 type: 'input',
                 name: 'contact',
-                message: 'What is your github username?'
+                message: 'What is your GitHub username?',
+                validate: contactInput => {
+                    if (contactInput) {
+                    return true;
+                    } else {
+                    console.log('Enter your GitHub Username!');
+                    return false;
+                    }
+                }
             },
             {
                 type: 'input',
