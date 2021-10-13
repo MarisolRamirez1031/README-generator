@@ -1,21 +1,30 @@
 # README Generator
 
+  ![badge](https://img.shields.io/badge/License-ISC-blue)
+
   ## Description
-  Generate a project using only the CLI and Node.js
+  Create a README file for projects using only the CLI and Node.js Inquierer package
 
   ## Table of Contents
+
+  1. [Installation](#installation)
+  2. [Usage](#usage)
+  3. [Credits](#credits)
+  4. [License](#license)
+
   true
 
+
   ## Installation
-  download and install node.js
+  Download and install Node.js 
 
   ## Usage
-  after node.js is downloaded and installed use CLI to generate a README for your projects
+  you will be using the inquierer package 
 
   ## Credits 
-  No
+  no
 
   ## License
-  MIT License
+ 
 
 

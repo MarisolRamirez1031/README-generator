@@ -31,12 +31,12 @@ const promptUser = () => {
             {
                 type: 'input',
                 name: 'about',
-                message: 'What is your Project about?',
+                message: 'Please describe what is your project is about.',
                 validate: aboutInput => {
                     if (aboutInput) {
                     return true;
                     } else {
-                    console.log('Please enter your project description!');
+                    console.log('Please enter the project description!');
                     return false;
                     }
                 }
@@ -50,7 +50,7 @@ const promptUser = () => {
             {
                 type: 'input',
                 name: 'installation',
-                message: 'What are the steps required to install your project?',
+                message: 'If any, What are the steps required to install your project?',
                 validate: installationInput => {
                     if (installationInput) {
                     return true;
@@ -63,12 +63,12 @@ const promptUser = () => {
             {
                 type: 'input',
                 name: 'usage',
-                message: 'What are the usage instructions for your Project?',
+                message: 'What is your project being used for?',
                 validate: usageInput => {
                     if (usageInput) {
                     return true;
                     } else {
-                    console.log('You need to enter a project GitHub link!');
+                    console.log('Enter project usage information!');
                     return false;
                     }
                 }
@@ -85,7 +85,7 @@ const promptUser = () => {
                 type: 'list',
                 name: 'license',
                 message: 'Which license would you like to use for this Project?',
-                choices: ['MIT License', 'Apache 2.0 License', 'Mozilla Public License 2.0', 'Rails', 'Unlicensed']
+                choices: ['MIT', 'Apache', 'GPLv3', 'Rails', 'ISC', 'Unlicensed']
                 
             }
         ])
