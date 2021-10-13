@@ -10,10 +10,9 @@ const fs = require('fs');
 
 const generateMarkdown = require('./Develop/utils/generateMarkdown');
 
-const generate = require('./Develop/utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
-const promptQuestions = () => {
+const promptUser = () => {
     return inquirer
     .prompt([
             {
@@ -88,34 +87,29 @@ const promptQuestions = () => {
                 message: 'Which license would you like to use for this Project?',
                 choices: ['MIT License', 'Apache 2.0 License', 'Mozilla Public License 2.0', 'Rails', 'Unlicensed']
                 
-            },
-            {
-           }
+            }
         ])
-    };
+        .then(data => {
+            writeToFile('README.md', generateMarkdown(data));
+            console.log(data)
+        })
+    }
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data)
+    return fs.writeFileSync(fileName, data)
 }
 
 // TODO: Create a function to initialize app/ prompt
 function init() {
-    promptQuestions();
+    promptUser();
 }
 
 // Function call to initialize app
 init(); 
 
 const printProfileData = (profileDataArr) => {
-    // This...
-    for (let i = 0; i < profileDataArr.length; i++) {
-        console.log(profileDataArr[i]);
-    }
 
-    console.log('============')
-
-    // Is the same as this..
     profileDataArr.forEach((profileItem) => {
         console.log(profileItem);
     });
