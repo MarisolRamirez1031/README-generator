@@ -21,32 +21,41 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ${renderLicenseBadge(data.license)}
+  
 
-  ## Description
+  ## Description 📖
   ${data.about}
 
-  ## Table of Contents
+  ## Table of Contents ${renderLicenseBadge(data.license)}
 
   1. [Installation](#installation)
   2. [Usage](#usage)
   3. [Credits](#credits)
-  4. [License](#licenses)
+  4. [License](#license)
+  5. [Questions](#contact)
 
   ${data.contents}
 
 
-  ## Installation
+  ## Installation 💾
   ${data.installation}
 
-  ## Usage
+  ## Usage 🧰 
   ${data.usage}
 
-  ## Credits 
+  ## Credits 🤝
   ${data.credits}
 
-  ## License
- 
+  ## License © ™️
+  This project is covered by the [${data.license}](https://choosealicense.com/) license.
+
+  ## Questions ❓
+  
+  Github: [${data.contact}](https://github.com/${data.contact})
+
+  If you have any additonal questions you may contact me at ${data.email}
+
+
 
 
 `;

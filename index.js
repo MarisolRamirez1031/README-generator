@@ -87,7 +87,18 @@ const promptUser = () => {
                 message: 'Which license would you like to use for this Project?',
                 choices: ['MIT', 'Apache', 'GPLv3', 'Rails', 'ISC', 'Unlicensed']
                 
-            }
+            },
+            {
+                type: 'input',
+                name: 'contact',
+                message: 'What is your github username?'
+            },
+            {
+                type: 'input',
+                name: 'email',
+                message: 'What is your email address?',
+                default: 'myname@domain.com',
+            },
         ])
         .then(data => {
             writeToFile('README.md', generateMarkdown(data));
