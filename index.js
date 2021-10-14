@@ -31,7 +31,7 @@ const promptUser = () => {
             {
                 type: 'input',
                 name: 'about',
-                message: 'Please describe what is your project is about.',
+                message: 'Please describe your project.',
                 validate: aboutInput => {
                     if (aboutInput) {
                     return true;
@@ -50,7 +50,7 @@ const promptUser = () => {
             {
                 type: 'input',
                 name: 'installation',
-                message: 'If any, What are the steps required to install your project?',
+                message: 'What is required to install your project?',
                 validate: installationInput => {
                     if (installationInput) {
                     return true;
@@ -63,7 +63,7 @@ const promptUser = () => {
             {
                 type: 'input',
                 name: 'usage',
-                message: 'What is your project being used for?',
+                message: 'How is your project being used?',
                 validate: usageInput => {
                     if (usageInput) {
                     return true;
@@ -76,14 +76,14 @@ const promptUser = () => {
             {
                 type: 'input',
                 name: 'credits',
-                message: 'Were there any contributing collaborators or third party assets used for this Project?',
+                message: 'Were there any contributing collaborators, third party assets used or credits you would like to give for this Project?',
                 default: false
                 
             },
             {
                 type: 'list',
                 name: 'license',
-                message: 'Which license would you like to use for this Project?',
+                message: 'Which license did you use for this project?',
                 choices: ['MIT', 'Apache', 'GPLv3', 'Rails', 'ISC', 'Unlicensed']
                 
             },
